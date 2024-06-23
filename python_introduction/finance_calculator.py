@@ -32,9 +32,9 @@ Enter your monthly income: 5000
 Enter your total monthly expenses: 4000
 Your monthly savings are $1000.
 Projected savings after one year, with interest, is: $12600.
-'''
+'''g
 monthly_income = int(input("Enter your monthly income: "))
-monthly_expenses = int(input("Enter your total monthly expenses: "))
+monthly_expenses = float(input("Enter your total monthly expenses: "))
 monthly_savings = float(monthly_income - monthly_expenses)
 anual_savings = monthly_savings * 12
 projected_savings = anual_savings + (monthly_savings * 12 * 0.05)
