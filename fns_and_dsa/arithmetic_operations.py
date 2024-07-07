@@ -10,14 +10,14 @@ def perform_operation(num1, num2, operation):
 
     if operation == "add":
         return num1 + num2
-    if operation == "subtract":
+    elif operation == "subtract":
         return num1 - num2
-    if operation == "multiply":
+    elif operation == "multiply":
         return num1 * num2
-    if operation == "divide":
+    elif operation == "divide":
         if num2 == 0:
             return "Sorry. You can't divide a number by zero."
-
-        return num1 / num2
-
-    return "Sorry our calculator only accepts 'add', 'subtract', 'multiply', or 'divide' at the moment."
+        else:
+            return num1 / num2
+    else:
+        return "Sorry our calculator only accepts 'add', 'subtract', 'multiply', or 'divide' at the moment"
