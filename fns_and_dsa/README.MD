@@ -1,0 +1,1 @@
+AIM: To understand how functions help organize code, improve readability, and promote re-usability.
