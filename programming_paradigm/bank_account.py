@@ -2,7 +2,7 @@ class BankAccount:
     """A BankAccount class that encapsulates banking operations"""
     def __init__(self, account_balance = 0):
         try:
-            self.account_balance = int(account_balance)
+            self.account_balance = float(account_balance)
         except ValueError:
             print("Invalid account balance provided. Please provide an interger")
 
@@ -29,4 +29,4 @@ class BankAccount:
 
     def display_balance(self):
         """Displays the account balance"""
-        print(f"Current Balance: ${self.account_balance}")
+        print(f"Current Balance: ${self.account_balance:.2f}")
