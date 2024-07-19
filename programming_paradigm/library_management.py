@@ -12,20 +12,12 @@ class Book:
         self._is_checked_out = False
 
     def check_out_book(self, title):
-        """Check out a book from library, if available"""
-        for book in self._books:
-            if book[0] == title and book[2] is False:
-                book[2] = True
-                return self.list_available_books()
-        print(f"Sorry. We don't have a book by the title {title}")
+        """Check out a book from library"""
+        self._is_checked_out = False
 
-    def return_book(self, title):
+    def return_book(self):
         """Return book to a library"""
-        for book in self._books:
-            if book[0] == title and book[2] is True:
-                book[2] = False
-                return self.list_available_books()
-        print(f"Sorry. We didn't have a book by the title {title}. Consider adding it as a new book")
+        self._is_checked_out = False
 
 
 class Library():
