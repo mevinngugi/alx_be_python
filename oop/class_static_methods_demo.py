@@ -20,6 +20,3 @@ class Calculator:
     def multiply(cls, a, b):
         print(f"Calculation type: {Calculator.calculation_type}")
         return a * b
-
-
-print(Calculator.multiply(2, 5))
