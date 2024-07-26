@@ -56,6 +56,6 @@ class Library:
             if hasattr(book, "page_count"):
                 print(f"PrintBook: {book.title} by {book.author}, Page Count: {book.page_count}")
             elif hasattr(book, "file_size"):
-                print(f"Ebook: {book.title} by {book.author}, File Size: {book.file_size}")
+                print(f"Ebook: {book.title} by {book.author}, File Size: {book.file_size}KB")
             else:
                 print(f"Book: {book.title} by {book.author}")
